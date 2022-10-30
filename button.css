@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+section {
+    padding: 24px 0;
+    border-bottom:  1px solid white;
+}
+.button {
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+.button.gradient {
+    border: 0;
+    outline: 0;
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+    transition:all cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+.button.gradient.hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+   
+}
+.link-gradient{
+    font-size: 32px;
+    margin-left:  16px;
+    text-decoration:  none;
+    color: white;
+    position: relative;
+}
+.link-gradient:after{
+content: '';
+height: 2px;
+position: absolute;
+bottom: -2px;
+left: 0;
+right: 0;
+
+}
+.link-gradient:hover{
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
